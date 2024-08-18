@@ -37,8 +37,9 @@ for word in words:
 
 # Replace the placeholders in the story with the user's input
 for word in words:
-    # Replace each word/phrase in the story with the user's provided answer
+    # Reassign to 'story' to apply the replacement since strings are immutable in Python.
     story = story.replace(word, answers[word])
+
 
 # At this point, the 'story' variable contains the updated text with all replacements.
 print(story)
